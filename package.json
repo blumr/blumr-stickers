@@ -1,0 +1,24 @@
+{
+  "name": "blumr-stickers",
+  "author": "LetsBlumIt Corp.",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "clean": "node build.js svg clean",
+    "convert": "node build.js svg convert"
+  },
+  "devDependencies": {
+    "lwip": "0.0.x",
+    "jscs": "1.9.x",
+    "svgo": "0.5.x",
+    "async": "0.9.x",
+    "chalk": "0.5.x",
+    "jshint": "2.5.x",
+    "svg2png": "1.1.x",
+    "imagemin": "3.1.x",
+    "node-dir": "0.1.x"
+  }
+}
