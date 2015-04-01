@@ -26,12 +26,14 @@ npm install
 
 #### Clean SVGs
 ```
-npm run clean
+npm run clean            -- all files
+npm run clean [svg name] -- single file
 ```
 
 #### Convert SVGs
 ```
-npm run convert
+npm run convert            -- all files
+npm run convert [svg name] -- single file
 ```
 
 ### Roadmap
