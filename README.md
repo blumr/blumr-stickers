@@ -41,10 +41,10 @@ npm run convert [svg name] -- single file
 
 #### Project directory structure
 ```
+├─ preview
 ├─ 256x256  - minified
-├─ demo     - stickers demo
-├─ png      - raw pngs
-└─ svg      - source svgs
+├─ png      - converted
+└─ svg      - source
 ```
 
 ### License
