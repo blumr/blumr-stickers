@@ -17,7 +17,7 @@ Image stickers
 
 ### Contributing
 Make sure that [nodejs is installed](http://nodejs.org/download/) first.
-For osx, its best to [use homebrew](http://shapeshed.com/setting-up-nodejs-and-npm-on-mac-osx/).
+For osx, it's best to [use homebrew](http://shapeshed.com/setting-up-nodejs-and-npm-on-mac-osx/).
 
 #### Install dependencies
 ```
