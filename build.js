@@ -18,7 +18,7 @@ var fs = require('fs'),
   srcDir = process.argv[2],
   srcPath = path.join(__dirname, srcDir),
   outPath = path.join(__dirname, 'png'),
-  outPath256 = path.join(__dirname, '256x256'),
+  outPath256 = path.join(__dirname, '768x768'),
   svgo = new Svgo();
 
 dir.files(srcPath, function (err, files) {
@@ -143,7 +143,7 @@ function convertSvg(file, callback) {
       async.series([
 
         function (callback2) {
-          svg2png(file, path.join(outPath, pngFile), 2, function (err) {
+          svg2png(file, path.join(outPath, pngFile), 4, function (err) {
             if (err) {
               callback2(err);
             } else {
@@ -155,11 +155,11 @@ function convertSvg(file, callback) {
 
         function (callback2) {
           lwip.open(path.join(outPath, pngFile), function (err, image) {
-            processImage(image, 256, path.join(outPath256, pngFile), function (err) {
+            processImage(image, 768, path.join(outPath256, pngFile), function (err) {
               if (err) {
                 callback2(err);
               } else {
-                util.log(chalk.green(filename + ' 256x256 resized ✓'));
+                util.log(chalk.green(filename + '  768x768 resized ✓'));
                 callback2();
               }
             });
